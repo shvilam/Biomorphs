@@ -5,7 +5,7 @@ Javascript implementation of Richard Dawkins' famous Biomorphs.
 more infor about Richard Dawkins' famous Biomorphs can be found [here](https://www.google.com/search?q=Biomorphs+can+be+found+here&oq=Biomorphs+can+be+found+here&aqs=chrome..69i57.340j0j4&sourceid=chrome&espv=210&es_sm=119&ie=UTF-8#q=biomorphs+richard+dawkins). 
 
 My Colorful implemention 
-![ScreenShot](//ScreenShot.png)
+![ScreenShot](//https://raw.githubusercontent.com/shvilam/Biomorphs/master/ScreenShot.png)
 
 
 ## Technologies Using
