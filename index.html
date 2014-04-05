@@ -1,55 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Biomorphs : Javascript implementation of Richard Dawkins&#39; famous Biomorphs save in git for easy way to diff" />
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <title>Biomorphs</title>
+  <meta name="description" content="Javascript implementation of Richard Dawkins&#39; famous Biomorphs save in git for easy way to diff">
 
-    <title>Biomorphs</title>
-  </head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <body>
+</head>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/shvilam/Biomorphs">View on GitHub</a>
+<body>
 
-          <h1 id="project_title">Biomorphs</h1>
-          <h2 id="project_tagline">Javascript implementation of Richard Dawkins&#39; famous Biomorphs save in git for easy way to diff</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/shvilam/Biomorphs/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/shvilam/Biomorphs/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Biomorphs</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Javascript implementation of Richard Dawkins&#39; famous Biomorphs save in git for easy way to diff</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/shvilam/Biomorphs/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/shvilam/Biomorphs/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/shvilam/Biomorphs" class="code">View Biomorphs on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
 <a name="biomorphs" class="anchor" href="#biomorphs"><span class="octicon octicon-link"></span></a><strong>Biomorphs</strong>
 </h1>
 
-<p>Javascript implementation of Richard Dawkins' famous Biomorphs.
-more infor about Richard Dawkins' famous Biomorphs can be found <a href="https://www.google.com/search?q=Biomorphs+can+be+found+here&amp;oq=Biomorphs+can+be+found+here&amp;aqs=chrome..69i57.340j0j4&amp;sourceid=chrome&amp;espv=210&amp;es_sm=119&amp;ie=UTF-8#q=biomorphs+richard+dawkins">here</a>. </p>
+<p>Javascript implementation of Richard Dawkins' famous Biomorphs. 
+More info about Richard Dawkins' famous Biomorphs can be found here. <a href="https://www.google.com/search?q=Biomorphs+can+be+found+here&amp;oq=Biomorphs+can+be+found+here&amp;aqs=chrome..69i57.340j0j4&amp;sourceid=chrome&amp;espv=210&amp;es_sm=119&amp;ie=UTF-8#q=biomorphs+richard+dawkins">here</a>. </p>
 
-<p>My Colorful implemention 
+<p>My Colorful implementation
 <img src="/ScreenShot.png" alt="ScreenShot"></p>
 
 <h2>
 <a name="technologies-using" class="anchor" href="#technologies-using"><span class="octicon octicon-link"></span></a>Technologies Using</h2>
 
-<p>Cleint Side  </p>
+<p>Client Side</p>
 
 <ul>
 <li>Javascript</li>
 <li>Canavs </li>
 <li>jquriy</li>
+<li>History.js <a href="https://github.com/browserstate/history.js/">https://github.com/browserstate/history.js/</a>
+</li>
 </ul><p>Serever</p>
 
 <ul>
@@ -59,40 +66,57 @@ more infor about Richard Dawkins' famous Biomorphs can be found <a href="https:/
 </li>
 </ul><p><strong>Rquriments</strong> </p>
 
-<p>Apart form the obvious one you will have to create a git reposetory one level up from your server folder </p>
+<p>Apart form the obvious ones. You will have to create a git repository one level up from your server folder.</p>
 
 <h2>
 <a name="using-git-as-db" class="anchor" href="#using-git-as-db"><span class="octicon octicon-link"></span></a>Using Git as DB</h2>
 
-<p>I have chose to save the stats of the diffrent Biomorph in git for easy way to diff the file.
-I think that the 2 concept going together great becase both of them are for save inctermtal changes.
-the intailse conceept was 
-create branches for each run so when you will go over the commit it will make more seacne.</p>
+<p>I have chosen to save the stats of the different Biomorph in git for easy way to diff the file.
+I think that the 2 concept going together great because both of them are build to save incremental changes.
+the initial concept was
+created branches for each run so when you will go over the commit it will make more scene.</p>
 
-<p><strong>The cons</strong> of this nice idea is scalablity this implemention could not scale at all.
-Maily becase the changes on the local file can run over each other and the git prosses can be lock by other prosses.</p>
+<p><strong>The cons</strong> of this nice idea is scalability this implementation could not scale at all.
+Mainly because the changes on the local file can run over each other and the git process can be locked by other processes.</p>
+
+<h2>
+<a name="solving-the-scalability-issue" class="anchor" href="#solving-the-scalability-issue"><span class="octicon octicon-link"></span></a>Solving the scalability issue</h2>
+
+<p>It can be solve some quite easily with using sql base db, like mysql each Biomorph will have a key and each Biomorph will be have it own row.
+It can even scale it using nosql db like mongo.</p>
+
+<p>Both changes could be done quite easily.</p>
 
 <h2>
 <a name="what-is-missing" class="anchor" href="#what-is-missing"><span class="octicon octicon-link"></span></a>What is missing</h2>
 
-<p>There is few thing that are missing manliy becase it only written as a concept project and not a real one and as allway shortege of time.</p>
+<p>There is few thing that are missing mainly because it only written as a concept project and not a real one and as always shortage of time.</p>
 
 <ul>
-<li>test there is not implamention of Unit test or any other test at all </li>
+<li>test there is not implementation of Unit test or any other test at all. </li>
 <li>no error handling </li>
 </ul>
-      </section>
+        </article>
+      </div>
     </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/shvilam" class="avatar"><img src="https://avatars3.githubusercontent.com/u/325671?s=60" width="48" height="48"/></a> <a href="https://github.com/shvilam">shvilam</a> maintains <a href="https://github.com/shvilam/Biomorphs">Biomorphs</a></p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Biomorphs maintained by <a href="https://github.com/shvilam">shvilam</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
 
-              <script type="text/javascript">
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/shvilam/Biomorphs/tarball/master" class="tar">tar</a><a href="https://github.com/shvilam/Biomorphs/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -103,6 +127,5 @@ Maily becase the changes on the local file can run over each other and the git p
             } catch(err) {}
           </script>
 
-
-  </body>
+</body>
 </html>
