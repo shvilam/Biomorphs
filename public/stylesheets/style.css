@@ -1,0 +1,17 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.share {
+    background-color: darkblue;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+    /*opacity: 0.5;*/
+}
+
+a {
+    color: #00B7FF;
+}
