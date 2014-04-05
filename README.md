@@ -16,6 +16,9 @@ Client Side
 - jquriy
 - History.js https://github.com/browserstate/history.js/
 
+I haven't used any MVC framework even that Backbone.js could because be perfect but I thought that it a part ot the exercise to do the implementation myself.
+
+
 Serever
 - nodejs
 - express
