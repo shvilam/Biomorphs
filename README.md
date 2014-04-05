@@ -15,8 +15,9 @@ Maily becase the changes on the local file can run over each other and the git p
 
 ## What is missing 
 There is few thing that are missing manliy becase it only written as a concept project and not a real one and as allway shortege of avalable time.
-1. test there is not implamention of Unit test or any other test at all 
-2. no error handling 
+- test there is not implamention of Unit test or any other test at all 
+- no error handling 
+
 
 
 

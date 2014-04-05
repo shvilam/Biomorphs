@@ -1,12 +1,37 @@
 {
-    "name": "application-name",
+    "name": "Biomorphs",
     "version": "0.0.1",
-    "private": true,
+    "private": false,
     "scripts": {
         "start": "node app.js"
     },
     "dependencies": {
         "express": "3.5.1",
         "jade": "*"
-    }
+    },
+    "description": "Javascript implementation of Richard Dawkins' famous Biomorphs ",
+    "main": "app.js",
+    "devDependencies": {
+        "express": "3.5.1",
+        "nodegit": "*",
+        "async": "0.6.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shvilam/Biomorphs.git"
+    },
+    "keywords": [
+        "Biomorphs",
+        "Javascript",
+        "Richard",
+        "Dawkins",
+        "git",
+        "db"
+    ],
+    "author": "Amit Shvil",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shvilam/Biomorphs/issues"
+    },
+    "homepage": "https://github.com/shvilam/Biomorphs"
 }

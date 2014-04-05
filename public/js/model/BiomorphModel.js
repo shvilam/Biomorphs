@@ -7,8 +7,9 @@ function BiomorphModel() {
 
     this.serverAPI = new ServerAPI();
     this.biomorphs = [];
+
     MessageBuss.getInstance().addEventListener(Events.PREDECESSOR_SELECTED, this.onPredecessorSelected, this);
-};
+}
 // Call from the Messagebus when a Predecessor is selected will clear current generation and create new generation
 BiomorphModel.prototype.onPredecessorSelected = function (event) {
     var biomoorph = event.data;
