@@ -1,16 +1,16 @@
 **Biomorphs**
 =========
 
-Javascript implementation of Richard Dawkins' famous Biomorphs.
-more infor about Richard Dawkins' famous Biomorphs can be found [here](https://www.google.com/search?q=Biomorphs+can+be+found+here&oq=Biomorphs+can+be+found+here&aqs=chrome..69i57.340j0j4&sourceid=chrome&espv=210&es_sm=119&ie=UTF-8#q=biomorphs+richard+dawkins). 
+Javascript implementation of Richard Dawkins' famous Biomorphs. 
+More info about Richard Dawkins' famous Biomorphs can be found here. [here](https://www.google.com/search?q=Biomorphs+can+be+found+here&oq=Biomorphs+can+be+found+here&aqs=chrome..69i57.340j0j4&sourceid=chrome&espv=210&es_sm=119&ie=UTF-8#q=biomorphs+richard+dawkins). 
 
-My Colorful implemention 
+My Colorful implementation
 ![ScreenShot](/ScreenShot.png)
 
 
 ## Technologies Using
 
-Cleint Side  
+Client Side
 - Javascript
 - Canavs 
 - jquriy
@@ -25,22 +25,28 @@ Serever
 
 **Rquriments** 
 
-Apart form the obvious one you will have to create a git reposetory one level up from your server folder 
+Apart form the obvious ones. You will have to create a git repository one level up from your server folder.
 
 
 	
 ## Using Git as DB
-I have chose to save the stats of the diffrent Biomorph in git for easy way to diff the file.
-I think that the 2 concept going together great becase both of them are for save inctermtal changes.
-the intailse conceept was 
-create branches for each run so when you will go over the commit it will make more seacne.
+I have chosen to save the stats of the different Biomorph in git for easy way to diff the file.
+I think that the 2 concept going together great because both of them are build to save incremental changes.
+the intailse concept was
+created branches for each run so when you will go over the commit it will make more scene.
 
-**The cons** of this nice idea is scalablity this implemention could not scale at all.
-Maily becase the changes on the local file can run over each other and the git prosses can be lock by other prosses.
+**The cons** of this nice idea is scalability this implementation could not scale at all.
+Mainly because the changes on the local file can run over each other and the git process can be locked by other processes.
+
+## Solving the scalablity issue 
+It can be solve some quite easily with using sql base db, like mysql each Biomorph will have a key and each Biomorph will be have it own row.
+It can even scale it using nosql db like mongo.
+
+Both changes could be done quite easily.
 
 ## What is missing 
-There is few thing that are missing manliy becase it only written as a concept project and not a real one and as allway shortege of time.
-- test there is not implamention of Unit test or any other test at all 
+There is few thing that are missing mainly because it only written as a concept project and not a real one and as always shortage of time.
+- test there is not implementation of Unit test or any other test at all. 
 - no error handling 
 
 
