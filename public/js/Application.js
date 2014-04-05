@@ -8,6 +8,19 @@
 function Application() {
     this.model = new BiomorphModel();
     this.view = new BiomorphViewCollection();
+
+    History.Adapter.bind(window, 'statechange', function () { // Note: We are using statechange instead of popstate
+        /*
+         var pageTracker = _gat._getTracker('UA-49309184-2');
+         pageTracker.push([ '_trackPageview', "/"+State.title]);
+         if (History.getState().internal) {
+         return;
+         }*/
+        var State = History.getState(); // Note: We are using History.getState() instead of event.state
+        History.log('statechange:', State.data, State.title, State.url);
+        console.log(State.data.toString());
+        MessageBuss.getInstance().dispatchEvent({"type": Events.STATE_CHANGE, "data": State.data})
+    });
 }
 // init with a random
 Application.prototype.initWithRandom = function () {
@@ -28,8 +41,8 @@ $(function () {
         app.initWithRandom();
     }
 
-
 });
+
 
 
 

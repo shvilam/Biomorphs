@@ -31,13 +31,12 @@ EventDispatcher.prototype.removeEventListener = function (type, listener) {
     var listeners = this._listeners;
     var listenerArray = listeners[ type ];
     if (listenerArray !== undefined) {
-        var index = listenerArray.indexOf(listener);
-        if (index !== -1) {
-            listenerArray.splice(index, 1);
+        for (var j = 0; j < listenerArray.length; j++) {
+            if (listenerArray[j].callBack == listener) {
+                listenerArray.splice(j, 1);
+            }
         }
-
     }
-
 };
 EventDispatcher.prototype.dispatchEvent = function (event) {
     if (this._listeners === undefined) return;
@@ -54,7 +53,7 @@ EventDispatcher.prototype.dispatchEvent = function (event) {
             array[ i ] = listenerArray[ i ];
         }
         for (var j = 0; j < length; j++) {
-            array[ j ].callBack.call(array[ j ].scope, event);
+            array[ j ].callBack.call(array[j].scope, event);
         }
 
     }
