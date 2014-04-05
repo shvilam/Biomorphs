@@ -12,7 +12,7 @@
   <script type="text/javascript" src="javascripts/script.js"></script>
 
   <title>Biomorphs</title>
-  <meta name="description" content="Javascript implementation of Richard Dawkins&#39; famous Biomorphs save in git for easy way to diff">
+  <meta name="description" content="JS implementation of Richard Dawkins&#39; Biomorphs Using git as DB">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -25,7 +25,7 @@
       <h1 class="title">Biomorphs</h1>
     </header>
     <div id="container">
-      <p class="tagline">Javascript implementation of Richard Dawkins&#39; famous Biomorphs save in git for easy way to diff</p>
+      <p class="tagline">JS implementation of Richard Dawkins&#39; Biomorphs Using git as DB</p>
       <div id="main" role="main">
         <div class="download-bar">
         <div class="inner">
@@ -73,14 +73,14 @@ More info about Richard Dawkins' famous Biomorphs can be found here. <a href="ht
 
 <p>I have chosen to save the stats of the different Biomorph in git for easy way to diff the file.
 I think that the 2 concept going together great because both of them are build to save incremental changes.
-the initial concept was
+the intailse concept was
 created branches for each run so when you will go over the commit it will make more scene.</p>
 
 <p><strong>The cons</strong> of this nice idea is scalability this implementation could not scale at all.
 Mainly because the changes on the local file can run over each other and the git process can be locked by other processes.</p>
 
 <h2>
-<a name="solving-the-scalability-issue" class="anchor" href="#solving-the-scalability-issue"><span class="octicon octicon-link"></span></a>Solving the scalability issue</h2>
+<a name="solving-the-scalablity-issue" class="anchor" href="#solving-the-scalablity-issue"><span class="octicon octicon-link"></span></a>Solving the scalablity issue</h2>
 
 <p>It can be solve some quite easily with using sql base db, like mysql each Biomorph will have a key and each Biomorph will be have it own row.
 It can even scale it using nosql db like mongo.</p>
