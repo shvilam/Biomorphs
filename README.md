@@ -42,7 +42,7 @@ created branches for each run so when you will go over the commit it will make m
 Mainly because the changes on the local file can run over each other and the git process can be locked by other processes.
 
 ## Solving the scalablity issue 
-It can be solve some quite easily with using sql base db, like mysql each Biomorph will have a key and each Biomorph will be have it own row.
+It can be solve quite easily using sql base db, like mysql each Biomorph will have a key and a value each Biomorph will be have it own row.
 It can even scale it using nosql db like mongo.
 
 Both changes could be done quite easily.
