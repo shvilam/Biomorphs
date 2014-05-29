@@ -5,13 +5,11 @@
  * 1. with a commit Hash in the query string example http://localhost:3000/index.html?id=00529cb41531e911dc217c8234ebd3a2d88a6796
  * 2. with out an entry point the first Biomorph will be generated randomly
  */
-require(["vendor/jquery-1.11.0.min",
-        "vendor/history.js/scripts/bundled/html4+html5/jquery.history",
-        "utils/Util",
+require(["utils/Util",
         "view/BiomorphViewCollection",
         "MessageBuss",
         "model/Events",
-        "model/BiomorphModel"], function($,history,Util,BiomorphViewCollection,MessageBuss,Events,BiomorphModel) {
+        "model/BiomorphModel"], function(Util,BiomorphViewCollection,MessageBuss,Events,BiomorphModel) {
     function Application() {
         this.model = new BiomorphModel();
         this.view = new BiomorphViewCollection();
